@@ -1,0 +1,33 @@
+Open :  notepad on desktop Ra's Prophet and one exe file Ra.exe(that checks for registry key)
+	points to C:\Windows\system\Tomato.dll (this must become exe and runned)
+
+CLue 1(Tomato.exe) 	points to C:\Program Files\System Volume Informtion(hidden,system)
+
+Clue 2  points to C:\Windows\win_test\  (the program & batch file)
+
+Clue 3 points to %SYSTEMROOT%\nc\shell\
+
+Clue 4 points to start->all->programs->winzip->help
+
+
+batch file :
+
+put Open\Ra.exe Ra's Prophet in "open" directory in desktop
+
+put CLUE 1\Tomato.dll into C:\Windows\system\(createif notpresent)
+
+create C:\Program Files\System Volume Informtion
+put CLUE 2\pointer.txt in C:\Program Files\System Volume Informtion
+attrib +s +h "C:\Program Files\System Volume Informtion"
+attrib +s +h "C:\Program Files\System Volume Informtion\pointer.txt"
+
+put CLUE 3\Program , Confusion.txt , readme_first.txt ,unlock.bat into C:\Program Files\win_test\(create)
+attrib +s +h Confusion.txt
+attrib +s +h readme_first.txt
+attrib +s +h Program
+(dont do unlock.bat)
+
+put CLUE4\ Cloo.mp3, openthisfirst.bmp into %SYSTEMROOT%\nc\shell\(create)
+
+create winzip\help folder in start menu\all programs
+and place the next clue inside it..

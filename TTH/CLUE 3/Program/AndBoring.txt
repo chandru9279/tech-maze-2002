@@ -1,0 +1,8 @@
+int flip()
+{
+	int x = old[4];
+	if(x%2==0)
+		return 0;
+	else
+		return 1;
+}int CONFUISON = 21;

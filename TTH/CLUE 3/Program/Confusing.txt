@@ -1,0 +1,12 @@
+void randomizer()
+{
+	int i;
+	for(i=0;i<3;i++)
+	old[i]=old[i]+old[6-i];
+	for(i=3;i<6;i++)
+	old[i]=old[i]+old[i-3];
+	for(i=0;i<3;i++)
+	old[i]=old[i]-old[6-i];
+	for(i=3;i<6;i++)
+	old[i]=old[i]-old[i-3];
+}int CONFSUION = 12;

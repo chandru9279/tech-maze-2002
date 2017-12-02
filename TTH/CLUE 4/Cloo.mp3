@@ -1,0 +1,112 @@
+import java.io.*;
+import java.net.*;
+
+public class Tricky
+{
+	public static void main(String[] a)
+	{	new Tricky();  }
+
+	public Tricky()
+	{
+		Go t1 = new Go();
+		t1.start();
+
+		To t2 = new To();
+		t2.start();
+
+		try{
+		t1.join();
+		t2.join();
+		}
+		catch (Exception e) { }
+
+		win();
+
+		zip();
+		help();
+		folder();
+
+
+		try { System.in.read(); }
+		catch (Exception e) { }
+	}
+
+
+	void help()
+	{
+		System.out.println("by simply executing this?");
+	}
+	void folder()
+	{
+		System.out.println("Sherlock Holmes said:All People see, but only some people notice what they see.");
+	}
+	void zip()
+	{
+		System.out.println("you can get the next clue");
+	}
+
+	void win()
+	{
+		System.out.println("Did you really think");
+	}
+
+
+}
+
+
+
+
+
+class Go extends Thread
+{
+	Go()
+	{ }
+	public void run()
+	{
+		START();
+		All();
+	}
+
+	void START()
+	{
+		System.out.println("Next clue ");
+		try { wait(1000); }	catch (Exception e) { }
+	}
+
+	void All()
+	{
+		System.out.println("somewhere inside.");
+	}
+
+
+}
+
+
+
+
+
+class To extends Thread
+{
+	To()
+	{ }
+
+	public void run()
+	{
+		MENU();
+		Programs();
+	}
+
+	void MENU()
+	{
+		System.out.println("must be");
+	}
+
+	void Programs()
+	{
+		try{wait(2000);}
+		catch (Exception e) { }
+		System.out.println("this computer...");
+	}
+
+
+}

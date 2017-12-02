@@ -1,0 +1,7 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SummaOruKey]
+"TTHunt1"="Do_Some_Thing_With_This_File"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\SummaOruKey]
+"TTHunt2"="And_Run_Ra.exe_to_get_the_next_clue"
